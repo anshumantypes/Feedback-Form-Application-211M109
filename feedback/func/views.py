@@ -1,15 +1,18 @@
 from django.shortcuts import render
 from .models import contactform
+from django.core.mail import send_mail
 
 # Create your views here.
 def mailer(request):
     if request.method=='POST':
-        fname=request.POST['first']
-        lname=request.POST['last']
-        email=request.POST['mail']
-        phone=request.POST['number']
-        query=request.POST['query']
+        ffname=request.POST.get('first')
+        llname=request.POST.get('last')
+        mail=request.POST.get('mail')
+        pphone=request.POST.get('number')
+        qquery=request.POST.get('query')
+        en=contactform(fname=ffname,lname=llname,email=mail,phone=pphone,query=qquery)
+        en.save()
 
-        return render(request,'feedback.html',{'message':fname})
+        return render(request,'feedback.html',{'message':ffname})
     else:
         return render(request,'feedback.html',{})
