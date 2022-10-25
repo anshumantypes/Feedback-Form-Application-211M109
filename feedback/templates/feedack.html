@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <title>feedback</title>
+</head>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        font-family: Questrial,sans-serif,cursive;
+    }
+    .Lside{
+        position:absolute;
+        height:100vh;
+        width:50%;
+        background-color: blueviolet;
+        z-index: -1;
+    }
+    .Rside{
+        position:absolute;
+        height:100vh;
+        right:0;
+        width:50%;
+        background-color:#275875;
+        z-index: -1;
+    }
+    .feed{
+        position:absolute;
+        z-index: 0;
+        height:60vh;
+        width: 55%;
+        top:20%;
+        left:20%;
+        background-color: rgb(255, 255, 255);
+        border-radius:0px;
+        box-shadow: 0 50px 50px rgb(0 0 0 / 50%);
+        padding-right:5%;
+        padding-left:5%;
+
+    }
+    .feed h3{
+        font-size: 30px;
+        margin-left:250px;
+        margin-top:70px;
+    }
+    .feed .formBox{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 190px;
+        padding-top: 25px;
+
+    }
+    .formBox .inputBox{
+        position: 0 0 35px 0;
+        padding-top: 5px;
+
+    }
+    .inputBox.w50{
+        width: 47%;
+    }
+    .formBox .inputBox.w100{
+        width: 100%;
+    }
+    .formBox .inputBox textarea,.formBox .inputBox input
+    {
+        width: 100% !important;
+        padding: 5px 0;
+        resize: none;
+        font-size: 18px;
+        font-weight: 300;
+        color: #333;
+        border: none;
+        border-bottom: 1px solid #777;
+        outline: none;
+    }
+    .formBox .inputBox textarea{
+        min-height: 70px;
+    }
+    .formBox .inputBox span{
+        position: relative;
+        left: 0;
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: 'Ubuntu', sans-serif;
+        color: #333;
+        transition: 0.3s;
+        pointer-events: none;
+    }
+    .formBox .inputBox input:focus ~ span,
+    .formBox .inputBox textarea:focus ~span,
+    .formBox .inputBox input:valid ~ span,
+    .formBox .inputBox textarea:valid ~span{
+        transform: translateY(-20px);
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: #ff568c;
+    }
+    .formBox .inputBox input[type="submit"]{
+        position: relative;
+        cursor: pointer;
+        background: #0f3959;
+        color: white;
+        border: none;
+        max-width: 100px;
+        padding: 10px;
+    }
+    .formBox .inputBox input[type="submit"]:hover{
+        background: #ff568c;
+    }
+
+    .contactinfo{
+        position:absolute;
+        z-index: 1;
+        width: 348px;
+        top: 22.5%;
+     
+        background-color: cadetblue;
+        margin-left: 150px;
+        height: calc(60% - 80px);
+        background: #0f3959;
+        z-index: 1;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+    }
+    .contactinfo h2{
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .contactinfo .info{
+        position: relative;
+        list-style: none;
+        margin-left:-31px;
+    }
+    .contactinfo .info li{
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+        align-items: flex-start;
+    }
+    .contactinfo .info li span{
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .contactinfo .info li span:nth-child(2){
+        color: white;
+        margin-left: 10px;
+        font-weight: 300;
+    }
+    .info li span:nth-child(1) img{
+        max-width: 100%;
+        filter: invert(1);
+        opacity: 0.5;
+    }
+    .info li span:nth-child(1){
+        width: 30px;
+        min-width: 30px;
+    }
+    .contactinfo .info li:hover span:nth-child(1) img,
+    .contactinfo .info li:hover span:nth-child(2){
+        opacity: 1;
+    } 
+
+
+</style>
+<body>
+    <div class="Lside"></div>
+    <div class="Rside"></div>
+    <div class="feed">
+        <h3>Contact Us</h3>
+            <div class="formBox">
+                <div class="inputBox w50">
+                    <input type="text" name="" required>
+                    <span>First Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" name="" required>
+                    <span>Last Name</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" name="" required>
+                    <span>Email Address</span>
+                </div>
+                <div class="inputBox w50">
+                    <input type="text" name="" required>
+                    <span>Mobile Number</span>
+                </div>
+                <div class="inputBox w100">
+                    <textarea name="" required></textarea>
+                    <span>Write your message here...</span>
+                </div>
+                <div class="inputBox w100">
+                    <input type="submit" value="Send">
+                </div>
+            </div>        
+    </div>
+    <div class="contactinfo">
+        <div>
+            <h2>Contact Info</h2>
+            <hr>
+            <ul class="info">
+                <li>
+                    <span><img src="contact_images/location.png" alt="location image"></span>
+                    <span>NITK,surathkal<br>
+                        mangalore<br>
+                        kanataka,575025</span>
+                </li>
+                <li>
+                    <span><img src="contact_images/mail.png" alt="location image"></span>
+                    <span>Anshumanupadhyay.211me109@nitk.edu.in</span>
+                </li>
+                <li>
+                    <span><img src="contact_images/telephone.png" alt="location image"></span>
+                    <span>9175954118</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
