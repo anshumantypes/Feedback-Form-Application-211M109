@@ -181,27 +181,26 @@
     <div class="feed">
         <h3>Contact Us</h3>
         <form method="post">
-
             <div class="formBox">
                 {% csrf_token %}
                 <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="first" required>
                     <span>First Name</span>
                 </div>
                 <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="last" required>
                     <span>Last Name</span>
                 </div>
                 <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="mail" required>
                     <span>Email Address</span>
                 </div>
                 <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="number" required>
                     <span>Mobile Number</span>
                 </div>
                 <div class="inputBox w100">
-                    <textarea name="" required></textarea>
+                    <textarea name="query" required></textarea>
                     <span>Write your message here...</span>
                 </div>
                 <div class="inputBox w100">
