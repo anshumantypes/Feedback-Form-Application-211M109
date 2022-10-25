@@ -12,6 +12,13 @@ def mailer(request):
         qquery=request.POST.get('query')
         en=contactform(fname=ffname,lname=llname,email=mail,phone=pphone,query=qquery)
         en.save()
+        send_mail(
+            'thanks for contacting us',
+            'we got ur back',
+            'anshumanu35@gmail.com',
+            [mail],
+            fail_silently=False,
+        )
 
         return render(request,'feedback.html',{'message':ffname})
     else:
