@@ -181,8 +181,8 @@
     <div class="feed">
         <h3>Contact Us</h3>
         <form method="post">
+            {% csrf_token %}
             <div class="formBox">
-                {% csrf_token %}
                 <div class="inputBox w50">
                     <input type="text" name="first" required>
                     <span>First Name</span>
