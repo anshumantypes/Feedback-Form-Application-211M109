@@ -7,3 +7,9 @@ class contactform(models.Model):
     email = models.EmailField(max_length=50)
     phone = models.IntegerField()
     query = models.TextField()
+
+    def __str__(self):
+        return self.fname + ' ' + self.lname
+
+
+
