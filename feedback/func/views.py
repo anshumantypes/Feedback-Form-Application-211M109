@@ -20,6 +20,6 @@ def mailer(request):
             fail_silently=False,
         )
 
-        return render(request,'feedback.html',{'message':ffname})
+        return render(request,'feedback.html',{'message':'thanks for your response'})
     else:
         return render(request,'feedback.html',{})
