@@ -13,8 +13,8 @@ def mailer(request):
         en=contactform(fname=ffname,lname=llname,email=mail,phone=pphone,query=qquery)
         en.save()
         send_mail(
-            'thanks for contacting us',
-            'we got ur back :)',
+            f"thanks for contacting us",
+            f'thanks for contacting us,\n{ffname} {llname}\n we recived the following feedback \n{qquery} \nwe will respond you soon',
             'anshumanu35@gmail.com',
             [mail],
             fail_silently=False,
