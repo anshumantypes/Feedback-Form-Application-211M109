@@ -31,7 +31,7 @@ It is strongly recommended that you use a released version.follow the [Instructi
 this FEEDBACK FORM is capable of storing all the data you submit in the django admin data base and also send the mail to the mail id entered in the FORM
 ## screenshots
 
-![2022-10-27 (1)](https://user-images.githubusercontent.com/114809998/198309911-1d37832c-3459-422f-9013-c55c62cb5df6.png)
+![2022-10-28 (1)](https://user-images.githubusercontent.com/114809998/198575542-d2566d39-8091-429e-a65e-c9c2b0f6d64e.png)
 ![2022-10-27 (6)](https://user-images.githubusercontent.com/114809998/198315403-5a655b0b-6537-4707-a035-18d3ff817d55.png)
 ![2022-10-27 (8)](https://user-images.githubusercontent.com/114809998/198315032-5f739782-2039-4682-8e6b-ac9bad97629b.png)
 ## the django database
