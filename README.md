@@ -1,7 +1,8 @@
 
 # FEEDBACK-FORM-APPLICATION
-
-This is my 1st task of GDSC NITK 
+This is my 1st task of GDSC NITK
+go through readme completely
+## please note
 ## Currently there is an issue if you run this project with NITK-NET wifi,please use your mobile hotspot or some other net for this to work
 
 the following screenshot is when you use NITK-NET
